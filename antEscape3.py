@@ -81,7 +81,7 @@ for i in range(testCase):
     world2 = world
     if start > 0:
         world2 = world[start:]
-        ant = world2.find('@')
+        ant = world2.find('@')  # world가 바뀜에 따라 ant의 인덱스도 바뀌는 것 주의
         print(f'ant: {ant} | crush: {crush} | start: {start} | len: {len(world2)}')
         print(world2)
 
