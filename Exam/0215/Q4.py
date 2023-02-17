@@ -16,8 +16,10 @@ songNum = 1
 for i in range(m):
     q = questions[i]
     if q > prefix[-1]:
+        last = prefix[-1]
+        prefix = [x + last for x in prefix]
+        print(prefix)
         songNum = 1
-        q -= prefix[-1]
 
     if q > prefix[songNum]:
         songNum += 1
